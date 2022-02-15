@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;1,200&family=Rubik&display=swap" rel="stylesheet">
+  
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color:  hsl(217, 54%, 11%);
+      color:white;
+    }
+
+    @media only screen and (max-width: 375px) {
+    body {
+    background-color: hsl(217, 54%, 11%);
+    }
+  }
+
+    .container{
+      width: 290px;
+      height: 460px;
+      background: hsl(216, 50%, 16%);
+      color: hsl(0, 0%, 100%);
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      box-sizing: border-box;
+      padding: 10px;
+      border-radius: 15px;
+    }
+
+    .Equilibrium{
+      width: 260px;
+      height: 235px;
+      border-radius: 5px;
+      position: absolute;
+      top: 4%;
+      right: 5%;;
+    }
+
+    .head{
+      font-family:'Outfit','san-serif';
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+      position: relative;
+      top: 55%;
+      right: 20%;
+    }
+
+    p{
+      font-family: 'Outfit','san-serif';
+      color: hsl(209, 72%, 44%);
+      font-weight: 400;
+      font-size: 13px;
+      text-align: justify;
+      position: relative;
+      top: 54%;
+      right: -2%;
+    }
+
+    .eth{
+      font-family: 'Outfit','san-serif';
+      color: hsl(209, 72%, 44%);
+      font-weight: 400;
+      font-size: 13px;
+      text-align: justify;
+      position: relative;
+      top: 56%;
+      right: -2%;
+    }
+
+    .val{
+      font-family: 'Outfit','san-serif';
+      color:  hsl(178, 100%, 50%);
+      font-weight: 600;
+      font-size: 13px;
+      text-align: justify;
+      position: relative;
+      top: 48%;
+      right: -9%;
+    }
+
+    svg{
+      font-family: 'Outfit','san-serif';
+      color: hsl(209, 72%, 44%);
+      font-weight: 400;
+      font-size: 13px;
+      text-align: justify;
+      position: relative;
+      top: 42%;
+      right: -61%;
+    }
+
+    .vals{
+      font-family: 'Outfit','san-serif';
+      color:  hsl(209, 76%, 81%);
+      font-weight: 600;
+      font-size: 13px;
+      text-align: justify;
+      position: relative;
+      top: 34%;
+      right: -70%;
+    }
+
+    hr{
+      position: relative;
+      top: 36%;
+      right: -1%;
+      
+    }
+
+    .avatar{
+      width: 32px;
+      height: 45px;
+      border-radius: 5px;
+      position: absolute;
+      top: 89%;
+      right: 84%;
+    }
+
+    span{
+      font-family: 'Outfit','san-serif';
+      font-weight: 600;
+      font-size: 13px;
+      text-align: justify;
+      position: relative;
+      top: 40%;
+      right: -18%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/image-equilibrium.jpg" class="Equilibrium">
+    <h2 class="head"> Equilibrium #3429</h2>
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+    <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg" class="eth"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/>
+    </svg>
+    <p class="val">0.041 ETH</p>
+    <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+    <p class="vals"> 3 days left</p>
+    <hr>
+    <img src="images/image-avatar.png" class="avatar">
+    <span style="color:hsl(209, 72%, 44%)">Creation of</span> <span style="color: wheat;">Jules Wyvern</span>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">jamshiiii</a>.
+  </div>
+</body>
+</html>
